@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <form className="input-group mb-3" id="search-engin">
+        <input
+          type="text"
+          className="form-control"
+          placeholder="City"
+          aria-label="City"
+          aria-describedby="button-addon2"
+          id="city-input"
+          autoComplete="off"
+        />
+        <button
+          className="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
         >
-          Learn React
-        </a>
-      </header>
+          Search
+        </button>
+        <button
+          className="btn btn-outline-secondary"
+          type="button"
+          id="button-addon3"
+        >
+          Current
+        </button>
+      </form>
     </div>
   );
 }
-
-export default App;
