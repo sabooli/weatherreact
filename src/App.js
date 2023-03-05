@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
@@ -22,13 +21,6 @@ export default function App() {
           id="button-addon2"
         >
           Search
-        </button>
-        <button
-          className="btn btn-outline-secondary"
-          type="button"
-          id="button-addon3"
-        >
-          Current
         </button>
       </form>
     </div>
