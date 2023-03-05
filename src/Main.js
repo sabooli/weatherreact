@@ -20,15 +20,15 @@ export default function Main() {
     );
     alert(`temp is ${temperature}`);
   }
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
   function handleSubmit(event) {
     event.preventDefault();
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4b0b2f517c80e7ab3164919ae7be38b7&units=metric`;
     axios.get(url).then(showTemperature);
   }
-  function updateCity(event) {
-    setCity(event.target.value);
-  }
-  return (
+    return (
     <div className="App">
       <form
         className="input-group mb-3"
