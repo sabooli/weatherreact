@@ -5,7 +5,7 @@ import "./index.css";
 export default function Footnote() {
   return (
     <div>
-      <a href="https://github.com/sabooli/weather-app" className="footnote">
+      <a href="https://github.com/sabooli/weatherreact" className="footnote">
         {" "}
         Open-source code
       </a>
