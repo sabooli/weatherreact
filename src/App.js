@@ -5,7 +5,7 @@ import "./index.css";
 export default function App() {
   return (
     <div>
-      <p>*Not Defined*</p>
+      <p>**Not Defined**</p>
     </div>
   );
 }
