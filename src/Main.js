@@ -16,7 +16,7 @@ export default function Main() {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      iconURl: "https://openweathermap.org/img/wn/10d@2x.png",
+      icon: response.data.weather[0].icon,
       city: response.data.name,
       max: response.data.main.temp_max,
       min: response.data.main.temp_min,
