@@ -41,7 +41,7 @@ li {
   border-radius: 5px;
 }
 .font {
-  font-size: 15px;
+  font-size: 20px;
   position: relative;
   top: -4px;
 }
@@ -65,4 +65,7 @@ img {
 .name {
   font-family: "Lato", sans-serif;
   font-size: 12px;
+}
+.link {
+  text-decoration: none;
 }
