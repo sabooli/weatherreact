@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import App from "./App";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
