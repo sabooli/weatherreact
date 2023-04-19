@@ -2,6 +2,7 @@ import React from "react";
 import App from "./App";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForecast from "./WeatherForecast";
 
 
 export default function WeatherInfo(props) {
@@ -32,7 +33,7 @@ export default function WeatherInfo(props) {
           </div>
           <div className="col-sm-6">
             <div className="card-body mt-4">
-              <WeatherIcon code = {props.data.icon} />
+              <WeatherIcon code = {props.data.icon} size={60} />
               <br />
               <div>
                 <WeatherTemperature celcius={props.data.temperature} />
@@ -47,6 +48,8 @@ export default function WeatherInfo(props) {
             </div>
           </div>
         </div>
+        <br />
+        <WeatherForecast />
       </div>
     );
 }
