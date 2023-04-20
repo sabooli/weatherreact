@@ -8,6 +8,7 @@ export default function WeatherIcon(props) {
       "clear-sky-day": "CLEAR_DAY",
       "01n": "CLEAR_NIGHT",
       "02d": "PARTLY_CLOUDY_DAY",
+      "scattered-clouds-day": "PARTLY_CLOUDY_DAY",
       "02n": "PARTLY_CLOUDY_NIGHT",
       "03d": "CLOUDY",
       "03n": "CLOUDY",
