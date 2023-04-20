@@ -36,7 +36,11 @@ export default function Main() {
   if (weatherData.ready) {
     return (
       <div>
-        <form className="input-group mb-3" id="search-engin">
+        <form
+          onSubmit={handleSubmit}
+          className="input-group mb-3"
+          id="search-engin"
+        >
           <input
             type="text"
             className="form-control"
