@@ -35,6 +35,7 @@ export default function Main() {
   }
   if (weatherData.ready) {
     return (
+      <div className="box">
       <div>
         <form
           onSubmit={handleSubmit}
@@ -43,7 +44,7 @@ export default function Main() {
         >
           <input
             type="text"
-            className="form-control"
+            className="form-control border-light"
             placeholder="City"
             aria-label="City"
             aria-describedby="button-addon2"
@@ -52,15 +53,16 @@ export default function Main() {
             onChange={updateCity}
           />
           <button
-            className="btn btn-outline-secondary"
+            className="btn btn-outline-secondary text-dark border-light"
             type="button"
             id="button-addon2"
             onClick={handleSubmit}
           >
-            Search
+            SEARCH
           </button>
         </form>
         <WeatherInfo data={weatherData} />
+      </div>
       </div>
     );
   } else {

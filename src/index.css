@@ -32,12 +32,17 @@ li {
   margin-left: -20px;
   font-size: 15px;
 }
-
+.props {
+    font-size: 16px;
+}
+.hr {
+  border-top: 1px solid #fff;
+}
 .box {
-  background-color: #b4c6d2;
+  background-color: #b2b6b9;
   opacity: 90%;
   margin-top: 10px;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
